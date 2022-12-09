@@ -1,0 +1,11 @@
+//Archivo para importar colores dentro de los componentes directamente y no harcodearlos
+@import './config.scss';
+
+:export {
+  colorPrimario: $color-primario;
+  colorSecundario: $color-secundario;
+  colorVariante: $color-variante;
+
+  colorClaro: $color-claro;
+  colorOscuro: $color-oscuro;
+}

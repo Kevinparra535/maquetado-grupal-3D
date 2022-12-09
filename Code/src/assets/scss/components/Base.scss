@@ -1,0 +1,86 @@
+::selection {
+  background-color: $color-secundario;
+  color: $color-claro;
+}
+
+::selection {
+  background-color: get-opacity($color-oscuro, 0.8);
+  color: $color-claro;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-track {
+  background: $color-oscuro;
+}
+
+::-webkit-scrollbar-thumb {
+  background: get-opacity($color-primario, 0.8);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: get-opacity($color-primario, 1);
+}
+
+// variables css
+:root {
+  --main-font-size: 16px;
+}
+
+@include media(desktop-s) {
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  :root {
+    --main-font-size: 13px;
+  }
+}
+
+@include media(desktop-m) {
+  :root {
+    --main-font-size: 14px;
+  }
+}
+
+@include media(desktop-ml) {
+  :root {
+    --main-font-size: 15px;
+  }
+}
+
+@include media(desktop-l) {
+  :root {
+    --main-font-size: 15px;
+  }
+}
+
+@include media(desktop-xl) {
+  :root {
+    --main-font-size: 18px;
+  }
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+
+  #app_content {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    max-width: 2500px;
+    font-size: var(--main-font-size);
+    font-family: $Fuente1 !important;
+    overflow: hidden;
+    user-select: none;
+    scroll-behavior: smooth;
+    transition: all 0.3s ease-in-out;
+    color: $color-oscuro;
+    background-color: $color-bg-claro;
+  }
+}

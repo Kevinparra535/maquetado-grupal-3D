@@ -1,0 +1,89 @@
+{
+  /*
+       // Place your snippets for HTML here. Each snippet is defined under a snippet name and has a prefix, body and
+       // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+       // $1, $2 for tab stops, ${id} and ${id:label} and ${1:label} for variables. Variables with the same id are connected.
+       // Example:
+       "Print to console": {
+          "prefix": "log",
+          "body": [
+              "console.log('$1');",
+              "$2"
+          ],
+          "description": "Log output to console"
+      }
+  */
+  "PictureLarge": {
+    "prefix": "_pictureL",
+    "body": [
+      "<picture>",
+      "<!-- Desktop XL -->",
+      "<source",
+      " type='image/webp'",
+      " media='(min-width: 1366px)'",
+      " srcset='assets/images/ , assets/images/ 2x, assets/images/ 3x'",
+      "/>",
+      "<source",
+      "  type='image/png'",
+      "  media='(min-width: 1366px)'",
+      "  srcset='assets/images/ , assets/images/ 2x, assets/images/ 3x'",
+      "/>",
+      "<!-- Desktop -->",
+      "<source",
+      " type='image/webp'",
+      " media='(min-width: 992px)'",
+      " srcset='assets/images/ , assets/images/ 2x, assets/images/ 3x'",
+      "/>",
+      "<source",
+      "  type='image/png'",
+      "  media='(min-width: 992px)'",
+      "  srcset='assets/images/ , assets/images/ 2x, assets/images/ 3x'",
+      "/>",
+      "<!-- Tablet -->",
+      "<source",
+      "  type='image/webp'",
+      "  media='(min-width: 768px)'",
+      "  srcset='assets/images/ , assets/images/ 2x, assets/images/ 3x'",
+      "/>",
+      "<source",
+      "  type='image/png'",
+      "  media='(min-width: 768px)'",
+      "  srcset='assets/images/ , assets/images/ 2x, assets/images/ 3x'",
+      "/>",
+
+      "<!-- Mobile -->",
+      "<source",
+      "  type='image/webp'",
+      "  media='(max-width: 768px)'",
+      "  srcset='assets/images/ , assets/images/ 2x, assets/images/ 3x'",
+      "/>",
+      "<source",
+      "  type='image/png'",
+      "  media='(max-width: 768px)'",
+      "  srcset='assets/images/ , assets/images/ 2x, assets/images/ 3x'",
+      "/>",
+
+      "<img src='assets/images/' alt='#' />",
+      "</picture>"
+    ],
+    "description": "Estructura para los pictures. Con medias -responsive-."
+  },
+  "PictureSmall": {
+    "prefix": "_pictureS",
+    "body": [
+      "<picture>",
+      "<source",
+      " type='image/webp'",
+      " srcset='assets/images/ , assets/images/ 2x, assets/images/ 3x'",
+      "/>",
+      "<source",
+      "  type='image/png'",
+      "  srcset='assets/images/ , assets/images/ 2x, assets/images/ 3x'",
+      "/>",
+
+      "<img src='assets/images/' alt='#' />",
+      "</picture>"
+    ],
+    "description": "Estructura para los pictures. Sin medias -no responsive-."
+  }
+}
